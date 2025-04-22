@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { base } from "$app/paths";
+
 	let is_navbar_toggled = $state(false);
 </script>
 
@@ -65,7 +67,10 @@
 			</div>
 		{/if}
 	</nav>
-	<p class="text-center bg-yellow-400">
-		当サイトは更新を停止しました。今後は後継サイトの<a href="https://vendmap.tsukuba.dev" class="underline">vendmap.tsukuba.dev</a>をご利用ください。
-	</p>
+	<div class="bg-yellow-400 flex justify-center gap-x-1">
+		<img src={`${base}/exclamation.svg`} alt="危険を示すアイコン" />
+		<p>
+			当サイトは更新を停止しました。今後は後継サイトの<a href="https://vendmap.tsukuba.dev" class="underline">vendmap.tsukuba.dev</a>をご利用ください。
+		</p>
+	</div>
 </header>
