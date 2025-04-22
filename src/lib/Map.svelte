@@ -173,7 +173,7 @@
 	$inspect($payment);
 </script>
 
-<div id="map-container">
+<div id="map-container" class="md:top-[72px] top-[95px]">
 	<div id="map" bind:this={mapElem}></div>
 </div>
 
@@ -239,6 +239,5 @@
 	#map-container {
 		position: fixed;
 		bottom: 0;
-		top: 53px;
 	}
 </style>

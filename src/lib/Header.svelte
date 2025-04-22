@@ -2,8 +2,8 @@
 	let is_navbar_toggled = $state(false);
 </script>
 
-<header>
-	<nav class="dark:bg-slate-800 relative w-full p-2 z-30" aria-label="main navigation">
+<header class="relative w-full z-30">
+	<nav class="dark:bg-slate-800 p-2 pb-0" aria-label="main navigation">
 		<div class="flex items-center justify-between">
 			<div class="flex-auto">
 				<a class="item-center dark:text-neutral-200" href="/"> 筑波大自販機Map </a>
@@ -50,7 +50,7 @@
 			<div class="hidden md:flex">
 				<a href="/about" class="p-2 dark:text-neutral-200">about</a>
 				<a href="/contribute" class="p-2 dark:text-neutral-200">このサイトに貢献する</a>
-				<a href="https://github.com/eniehack/itf-vendingmachine" class="p-2 dark:text-neutral-200"
+				<a href="https://github.com/eniehack/vendmap-vercel" class="p-2 dark:text-neutral-200"
 					>GitHub</a
 				>
 			</div>
@@ -59,10 +59,13 @@
 			<div id="navbar-content" class="md:hidden flex flex-col block">
 				<a href="/about" class="p-2 dark:text-neutral-200">about</a>
 				<a href="/contribute" class="p-2 dark:text-neutral-200">このサイトに貢献する</a>
-				<a href="https://github.com/eniehack/itf-vendingmachine" class="p-2 dark:text-neutral-200"
+				<a href="https://github.com/eniehack/vendmap-vercel" class="p-2 dark:text-neutral-200"
 					>GitHub</a
 				>
 			</div>
 		{/if}
 	</nav>
+	<p class="text-center bg-yellow-400">
+		当サイトは更新を停止しました。今後は後継サイトの<a href="https://vendmap.tsukuba.dev" class="underline">vendmap.tsukuba.dev</a>をご利用ください。
+	</p>
 </header>
